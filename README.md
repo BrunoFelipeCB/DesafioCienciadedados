@@ -43,10 +43,11 @@ indeferir a compra, enviando-a para que um analista possa verificar o que está 
 ------
 - Para um modelo que necessita prever, optei por escolher 4 modelos que já possuo familiaridade, Regressão Linear, Arvore de Regressão, Random Forest, Um DummyClassifier foi utilizado como baseline.
 -Após gerar um dicionario com as respostas obtidas pelo pipeline, criei uma "base_results_explode" para conseguir plotar em boxplots para definir qual o melhor modelo.
-- O Modelo escolhido foi o RandomForestRegressor
+- O Modelo escolhido foi o **RandomForestRegressor**
+  
 ![RandomForest](imagens//RandomForest.jpg)
-## Etapa 3: Ajuste de Hiper parametros
+## Etapa 3: Ajuste de hiperparâmetro
 - Como já defini qual será meu modelo, refaço a etapa de preprocessamento e pipeline, realizo o fit e verifico as 5 colunas que tiveram o melhor aproveitamento no modelo.
-- Utilizo o GridSearchCV para adaptar os hiperparametros.
+- Utilizo o GridSearchCV para adaptar os hiperparâmetro.
 - Após o fit, verifico quais são os hiper parametros que melhor se adaptam e verifico as métricas de avaliação.
 ![metricas_de_avaliacao](imagens//metricas_de_avaliacao.jpg)
